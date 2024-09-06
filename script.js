@@ -17,3 +17,12 @@ btnCloseModal.addEventListener('click', function () {
   modal.classList.add('hidden');
   overlay.classList.add('hidden');
 });
+
+//handling escape keypress event
+
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape') {
+    modal.classList.add('hidden');
+    overlay.classList.add('hidden');
+  }
+});
